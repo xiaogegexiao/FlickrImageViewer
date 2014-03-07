@@ -5,12 +5,8 @@ import android.support.v4.util.LruCache;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 /**
- * CapTech Consulting Blog
- * 
  * ImageLruCache used to return previously loaded images from the cache. 
- * 
- * 
- * @author Clinton Teegarden
+ * @author Xiao
  *
  */
 public class ImageLruCache extends LruCache<String, Bitmap> implements ImageCache {

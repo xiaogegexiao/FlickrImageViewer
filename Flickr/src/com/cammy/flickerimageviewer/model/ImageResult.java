@@ -6,6 +6,11 @@ import java.util.Date;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Model class for every image
+ * @author Xiao
+ *
+ */
 public class ImageResult {
 	@SerializedName("title")
 	private String title;

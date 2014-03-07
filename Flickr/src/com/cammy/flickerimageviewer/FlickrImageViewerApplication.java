@@ -7,6 +7,11 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.cammy.flickerimageviewer.common.ImageLruCache;
 
+/**
+ * Application class for Flickr Image Viewer
+ * @author Xiao
+ *
+ */
 public class FlickrImageViewerApplication extends Application {
 	private ImageLruCache imageCache;
 	private RequestQueue queue;

@@ -15,8 +15,15 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.cammy.flickerimageviewer.FlickrImageViewerApplication;
 import com.cammy.flickerimageviewer.R;
 import com.cammy.flickerimageviewer.model.ImageResult;
-
+/**
+ * Small Image Viewer Adapter
+ * @author Xiao
+ *
+ */
 public class SmallImageAdapter extends BaseAdapter {
+	/**
+	 * the width/height ratio for image viewer item.
+	 */
 	public static float itemRatio =  1.314285714285714f;
 	
 	private Context context;
@@ -34,6 +41,11 @@ public class SmallImageAdapter extends BaseAdapter {
 		this.parentWidth = 0;
 	}
 	
+	/**
+	 * update ui layout params
+	 * @param parentWidth the width of the small image gallery
+	 * @param parentHeight the height of the small image gallery
+	 */
 	public void setSize(int parentWidth, int parentHeight) {
 		this.parentHeight = parentHeight;
 		this.parentWidth = parentWidth;
@@ -62,6 +74,9 @@ public class SmallImageAdapter extends BaseAdapter {
 		return position;
 	}
 
+	/**
+	 * return every small image view from img.xml
+	 */
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View view = convertView;

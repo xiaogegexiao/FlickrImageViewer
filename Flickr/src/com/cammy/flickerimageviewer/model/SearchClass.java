@@ -1,7 +1,11 @@
 package com.cammy.flickerimageviewer.model;
 
 import com.google.gson.annotations.SerializedName;
-
+/**
+ * Model class for json result
+ * @author Xiao
+ *
+ */
 public class SearchClass {
 	@SerializedName("title")
 	private String title;

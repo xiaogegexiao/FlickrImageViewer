@@ -15,7 +15,11 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.cammy.flickerimageviewer.FlickrImageViewerApplication;
 import com.cammy.flickerimageviewer.R;
 import com.cammy.flickerimageviewer.model.ImageResult;
-
+/**
+ * Large Image Viewer adapter
+ * @author Xiao
+ *
+ */
 public class LargeImageAdapter extends BaseAdapter {
 	private Context context;
 	private List<ImageResult> results;
@@ -23,6 +27,7 @@ public class LargeImageAdapter extends BaseAdapter {
 	private int parentWidth;
 	private int parentHeight;
 
+	
 	public LargeImageAdapter(Context context, List<ImageResult> results) {
 		this.context = context;
 		this.results = results;
@@ -32,6 +37,11 @@ public class LargeImageAdapter extends BaseAdapter {
 		this.parentHeight = 0;
 	}
 	
+	/**
+	 * update layout params
+	 * @param parentWidth the width of the gallery
+	 * @param parentHeight the height of the gallery
+	 */
 	public void setSize(int parentWidth, int parentHeight){
 		this.parentWidth = parentWidth;
 		this.parentHeight = parentHeight;
@@ -60,6 +70,9 @@ public class LargeImageAdapter extends BaseAdapter {
 		return position;
 	}
 
+	/**
+	 * return every large image view from img.xml
+	 */
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View view = convertView;
